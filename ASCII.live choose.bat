@@ -20,6 +20,7 @@ echo  9. maxwell          21. parrot
 echo  10. kitty           22. playstation
 echo  11. batman-running  23. rick
 echo  12. dvd             24. as
+echo                      25. tree (not ascii.live)
 echo.
 echo  Type 'exit' or '0' to quit
 echo.
@@ -141,4 +142,5 @@ set anim=
 set colorChoice=
 start /max "ASCII: %anim_to_play%" cmd /c "color %color_to_use% && curl ascii.live/%anim_to_play%"
 goto menu
+
 
