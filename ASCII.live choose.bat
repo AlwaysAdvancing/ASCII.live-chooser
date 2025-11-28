@@ -89,27 +89,6 @@ if /i "%choice%"=="rick" set anim=rick
 if /i "%choice%"=="as" set anim=as
 if /i "%choice%"=="tree" cd C:\
 if /i "%choice%"=="tree" echo C:.
-├───CapaServiceFiles
-│   └───CapaServicesConsole
-├───Drivers
-│   ├───Audio
-│   │   └───R1YA310W
-│   │       ├───ACP
-│   │       │   └───ACPBus
-│   │       │       └───WT64A
-│   │       ├───Dolby
-│   │       │   ├───ext
-│   │       │   │   ├───ext_rtk
-│   │       │   │   └───ext_usb
-│   │       │   └───swc_factory
-│   │       │       ├───swc_aposvc
-│   │       │       └───swc_hsa
-│   │       ├───Fusion
-│   │       │   ├───ext_amic
-│   │       │   ├───ext_rtk
-│   │       │   ├───ext_usb
-│   │       │   └───fusion_swc_aposvc
-│   │       └───Realtek
 wait /t 0
 if /i "%choice%"=="tree" tree
 
@@ -162,3 +141,4 @@ set anim=
 set colorChoice=
 start /max "ASCII: %anim_to_play%" cmd /c "color %color_to_use% && curl ascii.live/%anim_to_play%"
 goto menu
+
